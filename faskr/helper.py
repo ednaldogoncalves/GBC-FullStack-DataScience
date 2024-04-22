@@ -184,8 +184,7 @@ def generate_random_from_data():
 # function to commit one register data to PostgreSQL
 def commit_to_postgres_one(filename, full_name, img_path):
     try:
-        conn = psycopg2.connect(
-            "postgres://avnadmin:AVNS_Hc4Qm8bsdSZNvnTiygm@pg-93491fc-facedetectiongbc.b.aivencloud.com:13872/defaultdb?sslmode=require")
+        conn = psycopg2.connect("")
         cur = conn.cursor()
 
         # opening the image from dataset
@@ -247,7 +246,7 @@ def compare_faces_sql(embedding, operator, number_neighbors, similarity):
 
   try:
     # connecting to the database
-    conn = psycopg2.connect("postgres://avnadmin:AVNS_Hc4Qm8bsdSZNvnTiygm@pg-93491fc-facedetectiongbc.b.aivencloud.com:13872/defaultdb?sslmode=require")
+    conn = psycopg2.connect("")
     cur = conn.cursor()
 
     string_representation = "["+ ",".join(str(x) for x in embedding.tolist()) +"]"
