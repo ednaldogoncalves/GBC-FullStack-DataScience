@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search for Suspect</title>
+</head>
+<body>
+    <div style="text-align: center;">
+        <h1>Search for Suspect in DVR Video</h1>
+        <form action="/search" method="post" enctype="multipart/form-data">
+            <br><p>
+            <label for="video-select">Select DVR Video:</label>
+            <select id="video-select" name="video">
+                <option value="video1">Video 1</option>
+                <option value="video2">Video 2</option>
+                <!-- Add more options as needed -->
+            </select></p><br>
+            <p><label for="suspect-image">Upload Suspect's Photo:</label>
+            <input type="file" id="suspect-image" name="image"></p>
+            <p><br>
+            <label for="suspect-name">Suspect's Name:</label>
+            <input type="text" id="suspect-name" name="name" size="50"></p>
+            <br>
+            <p><input type="submit" value="Search"></p>
+            <br>
+        </form>
+        <a href="/">Back to Home</a>
+    </div>
+</body>
+</html>

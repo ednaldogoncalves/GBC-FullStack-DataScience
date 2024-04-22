@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Result - Search for suspect in the database</title>
+</head>
+<body>
+    <div style="text-align: center;">
+        <h1>{{ result_message }}</h1>
+        <img src="{{ url_for('static', filename=processed_image_path) }}" alt="Processed Image">
+        <p>{{ processed_image_path }}</p>
+        <br>
+        <a href="/">Back to Home</a>
+    </div>
+</body>
+</html>

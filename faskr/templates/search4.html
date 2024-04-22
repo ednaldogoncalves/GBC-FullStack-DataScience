@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search for Suspect</title>
+</head>
+<body>
+    <div style="text-align: center;">
+        <h1>Search for Suspect on Online Camera</h1><br><br>
+        <form action="/search" method="post" enctype="multipart/form-data">
+            <label for="suspect_photo">Enter a photo of the suspect:</label>
+            <input type="file" id="suspect_photo" name="suspect_photo"><br><br>
+            <p>
+             <label for="suspect_name">Enter the suspect's name:</label>
+              <input type="text" id="suspect_name" name="suspect_name" size="50"></p><br>
+            <p>
+          <input type="submit" value="Search"></p><br>
+        </form>
+        <a href="/">Back to Home</a>
+    </div>
+</body>
+</html>
